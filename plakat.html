@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Случайное добро</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe3c2, #ffd1dc);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🌸 Тёплое слово для тебя:</h1>
+    <p id="quote"></p>
+
+    <script>
+        const quotes = [
+            "Ты — луч света, даже если сам этого не замечаешь.",
+            "Сегодня идеальный день, чтобы начать сначала.",
+            "Пусть добро к тебе возвращается в десятикратном размере.",
+            "Ты важен. Именно ты.",
+            "Ошибки — это не провалы, а шаги вверх.",
+            "Ты уже сделал(а) больше, чем думаешь.",
+            "Каждый день — это новая возможность быть счастливым(ой).",
+            "Твоя доброта меняет мир вокруг тебя.",
+            "Ты способен(на) на великие дела.",
+        ];
+
+        document.getElementById("quote").innerText =
+            quotes[Math.floor(Math.random() * quotes.length)];
+    </script>
+</body>
+
+</html>
